@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.decube.io/public-api/overview
+docs: https://docs.decube.io/public-api/api-keys
+summary:
+  types: [apiKey, oauth2]
+  api_key_in: [header]
+  oauth2_flows: [authorizationCode]
+notes: >-
+  The Decube Public REST API (Data API + Control API) authenticates with a static API key sent in the
+  X-Decube-Api-Key request header. API access is opt-in per organization (enabled by Sales / Account
+  Manager) and limited to Owner-level users; each user may hold up to 5 active API keys, generated from
+  My Account -> Update Profile -> Generate New API Key. The hosted MCP server uses OAuth 2.0 instead of
+  the API key. Platform (UI) sign-in supports SSO and multi-factor authentication.
+schemes:
+- name: X-Decube-Api-Key
+  type: apiKey
+  in: header
+  parameter_name: X-Decube-Api-Key
+  applies_to: [Data API, Control API]
+  source: https://docs.decube.io/public-api/api-keys
+- name: OAuth2
+  type: oauth2
+  flow: authorizationCode
+  applies_to: [MCP Server]
+  source: https://docs.decube.io/mcp/quick-start
+- name: SSO / MFA
+  type: platform
+  applies_to: [Web application sign-in]
+  source: https://docs.decube.io/org-settings/multi-factor-authentication
