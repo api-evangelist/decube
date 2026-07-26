@@ -1,7 +1,26 @@
 aid: decube
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/decube.png
 name: Decube
-description: Decube is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Decube is a unified data trust platform that combines data observability, discovery, cataloging,
+  and governance for regulated industries such as banking, financial services, insurance, and telecom. It
+  provides metadata management, column-level lineage, data quality monitoring, anomaly and schema-change
+  detection, decentralized data products, and pipeline observability, plus Trusty AI for governed data
+  context. Decube exposes a BETA Public REST API (a Data API and a Control API) authenticated with an
+  X-Decube-Api-Key header across regional endpoints, a webhooks integration for incident alerts, and a
+  fully hosted MCP server (OAuth) so AI clients can search the catalog, inspect lineage, manage monitors,
+  and act on incidents.
 url: https://raw.githubusercontent.com/api-evangelist/decube/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +30,106 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Data Observability
+- Data Governance
+- Data Catalog
+- Data Quality
+- Data Lineage
+- Metadata Management
+- Data Trust
+- Data Products
+- Model Context Protocol
+apis:
+- name: Decube Public API
+  description: The Decube Public API (BETA, v1) exposes a Data API (assets, glossary, lineage, monitors,
+    ACL, reports, recon, custom attributes, virtual sources) and a Control API (users) for automating
+    data catalog, quality, lineage, and access-control workflows. Authenticated with an X-Decube-Api-Key
+    header against regional endpoints (us-1, apac).
+  humanURL: https://docs.decube.io/public-api/overview
+  baseURL: https://connect.us1.decube.io/api/v1
+  tags:
+  - Data Observability
+  - Data Catalog
+  - Data Quality
+  - Data Lineage
+  properties:
+  - type: Documentation
+    url: https://docs.decube.io/public-api/overview
+  - type: Authentication
+    url: authentication/decube-authentication.yml
+  - type: Webhooks
+    url: asyncapi/decube-webhooks.yml
+  - type: Conventions
+    url: conventions/decube-conventions.yml
+  - type: DataModel
+    url: data-model/decube-data-model.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/decube-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/decube-vulnerability-disclosure.yml
 - type: Website
   url: https://decube.io
+- type: DeveloperPortal
+  url: https://docs.decube.io
+- type: Documentation
+  url: https://docs.decube.io/overview/readme
+- type: APIReference
+  url: https://docs.decube.io/public-api/overview
+- type: GettingStarted
+  url: https://docs.decube.io/overview/getting-started
+- type: Support
+  url: https://docs.decube.io/overview/support
+- type: Blog
+  url: https://www.decube.io/blog
+- type: Pricing
+  url: https://www.decube.io/pricing
+- type: SignUp
+  url: https://www.decube.io/request-a-demo
+- type: Login
+  url: https://us1.decube.io
+- type: TermsOfService
+  url: https://www.decube.io/terms
+- type: PrivacyPolicy
+  url: https://www.decube.io/privacy
+- type: MCPServer
+  url: mcp/decube-mcp.yml
+- type: LLMsTxt
+  url: llms/decube-llms.txt
+- type: Webhooks
+  url: asyncapi/decube-webhooks.yml
+- type: Authentication
+  url: authentication/decube-authentication.yml
+- type: Conventions
+  url: conventions/decube-conventions.yml
+- type: DataModel
+  url: data-model/decube-data-model.yml
+- type: Conformance
+  url: conformance/decube-conformance.yml
+- type: Compliance
+  url: https://www.decube.io/security
+- type: Security
+  url: https://www.decube.io/security
+- type: DomainSecurity
+  url: security/decube-domain-security.yml
+- type: Lifecycle
+  url: lifecycle/decube-lifecycle.yml
+- type: Deprecation
+  url: lifecycle/decube-lifecycle.yml
+- type: ChangeLog
+  url: changelog/decube-changelog.yml
+- type: ChangeLog
+  url: https://docs.decube.io/overview/changelog
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

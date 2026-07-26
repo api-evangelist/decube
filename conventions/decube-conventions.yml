@@ -1,0 +1,43 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.decube.io/public-api/overview
+docs:
+- https://docs.decube.io/public-api/overview
+- https://docs.decube.io/public-api/overview/index/assets
+notes: Cross-cutting request/response semantics for the Decube Public API (BETA, v1).
+authentication:
+  style: api-key-header
+  header: X-Decube-Api-Key
+  ref: authentication/decube-authentication.yml
+base_url:
+  pattern: https://connect.<REGION>.decube.io/api/v1/
+  regions: [us-1, apac, eu1]
+  note: Region is identified from the logged-in Decube workspace URL.
+versioning:
+  style: uri-path
+  current: v1
+  status: beta
+  policy: v1 will be deprecated and moved to v2 once the API reaches General Availability.
+pagination:
+  style: offset
+  params:
+    page: {type: integer, default: 1, min: 1}
+    page_size: {type: integer, default: 10, min: 1, max: 1000}
+  constraint: page * page_size must not exceed 10000
+  response_field: data
+  metadata: none
+  note: Search endpoints (e.g. POST /assets/search) return a list object with a `data` array; no cursor/next fields.
+idempotency:
+  supported: false
+  note: No idempotency-key header or contract is documented.
+rate_limiting:
+  enforced: false
+  note: No hard limit is enforced today; rate limiting is planned for a future release.
+error_handling:
+  format: unspecified
+  note: Docs direct users to the Support section for error-code troubleshooting; no RFC 9457 problem+json documented.
+  ref: null
+webhooks:
+  ref: asyncapi/decube-webhooks.yml
+lifecycle:
+  ref: lifecycle/decube-lifecycle.yml

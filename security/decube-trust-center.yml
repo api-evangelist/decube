@@ -1,0 +1,18 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+source: https://www.decube.io/security
+url: https://www.decube.io/security
+certifications:
+- SOC 2
+- ISO 27001
+- HIPAA
+- GDPR
+evidence:
+- source: https://www.decube.io/security
+  keywords:
+  - soc 2
+  - soc2
+  - iso 27001
+  - hipaa
+  - gdpr

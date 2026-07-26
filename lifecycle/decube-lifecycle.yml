@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.decube.io/public-api/overview
+notes: >-
+  Versioning and deprecation posture for the Decube platform and Public API. The Public API is BETA at
+  v1 and will move to v2 at General Availability. Decube publishes dated deprecation notices in its
+  changelog (e.g. Tags deprecated 2026-06-15 and auto-migrated to Column Tags). No public status page
+  was found (status.decube.io did not resolve).
+versioning:
+  scheme: uri-path
+  current: v1
+  status: beta
+  policy: v1 WILL be deprecated and moved to v2 once available for General Availability.
+  docs: https://docs.decube.io/public-api/overview
+deprecation:
+  policy: Feature deprecations announced with a date in the changelog; deprecated items may be auto-migrated.
+  example:
+    item: Tags
+    deprecated_on: '2026-06-15'
+    replacement: Column Tags (custom attribute)
+    docs: https://docs.decube.io/org-settings/custom-attributes/deprecation-guide-tags-to-column-tags
+  api_v1_sunset: planned at v2 GA (no date published)
+status_page: null
+sla:
+  url: null
+  note: Deployment options (SaaS multi/single-tenant, BYOC) documented under security-and-infrastructure/deployment-methods.
+changelog: https://docs.decube.io/overview/changelog

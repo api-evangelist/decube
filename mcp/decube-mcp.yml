@@ -1,0 +1,85 @@
+generated: '2026-07-18'
+method: searched
+status: published
+source: https://docs.decube.io/mcp/overview
+docs: https://docs.decube.io/mcp/quick-start
+server:
+  name: decube-mcp
+  transport: http
+  auth: oauth2
+  # Region-specific hosted endpoints; OAuth via the connected client (Claude Connectors,
+  # Cursor, ChatGPT, Microsoft Copilot Studio).
+  urls:
+    us: https://connect.us1.decube.io/mcp
+    eu: https://connect.eu1.decube.io/mcp
+    apac: https://connect.apac.decube.io/mcp
+notes: >-
+  Decube publishes a fully hosted, OAuth-authenticated MCP server (GA since 2026-07-06,
+  write/action tools added 2026-07-09). Both read and write/action tools are exposed so
+  connected AI clients can search the catalog, inspect lineage/quality, manage monitors,
+  and act on incidents.
+tools:
+- name: search_assets
+  group: catalog
+- name: get_asset
+  group: catalog
+- name: count_assets
+  group: catalog
+- name: update_asset_description
+  group: catalog
+- name: assign_asset_owner
+  group: catalog
+- name: get_lineage
+  group: lineage
+- name: get_quality_summary
+  group: data_quality
+- name: search_monitors
+  group: monitors
+- name: get_monitor_details
+  group: monitors
+- name: get_monitor_history
+  group: monitors
+- name: get_monitor_run_status
+  group: monitors
+- name: create_monitor
+  group: monitors
+- name: update_monitor
+  group: monitors
+- name: run_monitor
+  group: monitors
+- name: enable_disable_monitor
+  group: monitors
+- name: list_incidents_on_asset
+  group: incidents
+- name: list_incidents_assigned_to_user
+  group: incidents
+- name: get_incident_details
+  group: incidents
+- name: get_incident_history
+  group: incidents
+- name: update_incident
+  group: incidents
+- name: get_profiling_list
+  group: profiling
+- name: get_profiling_result
+  group: profiling
+- name: trigger_profiling_run
+  group: profiling
+- name: list_custom_attributes
+  group: governance
+- name: update_custom_attribute
+  group: governance
+- name: find_user_by_email
+  group: users
+- name: find_user_by_id
+  group: users
+- name: find_users_by_name
+  group: users
+- name: list_all_users
+  group: users
+- name: whoami
+  group: users
+- name: search_docs
+  group: docs
+- name: get_docs_page
+  group: docs

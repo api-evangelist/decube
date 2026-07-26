@@ -1,0 +1,34 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.decube.io/overview/changelog
+scheme: semver-dated
+current_version: 1.60.5
+notes: Platform releases are versioned semver (major.minor.patch) and dated YYYY-MM-DD. Recent window only.
+entries:
+- version: 1.60.5
+  date: '2026-07-16'
+  highlight: Trusty detects when an answer is best expressed visually and renders it inline in the conversation.
+- version: 1.60.4
+  date: '2026-07-14'
+  highlight: Fixed MCP tool issues with null test types and integer value handling.
+- version: 1.60.3
+  date: '2026-07-13'
+  highlight: Added follow-up prompts, copy/download, and regenerate options for Trusty responses.
+- version: 1.60.2
+  date: '2026-07-09'
+  highlight: Added write and action tools to the MCP Server, letting connected AI tools take actions in Decube.
+  additions: true
+- version: 1.60.1
+  date: '2026-07-06'
+  highlight: MCP Server now available with OAuth authentication for external AI tool integration.
+  additions: true
+- version: 1.60.0
+  date: '2026-07-02'
+  highlight: Data Products is now available, letting producers package trusted, documented data products.
+  additions: true
+- version: 1.59.2
+  date: '2026-06-29'
+  highlight: Improved BigQuery connector support and optimized reconciliation run scheduling.
+- version: 1.59.1
+  date: '2026-06-25'
+  highlight: Fixed Trusty service hitting Elasticsearch scroll context limits.

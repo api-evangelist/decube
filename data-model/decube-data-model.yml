@@ -1,0 +1,60 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.decube.io/public-api/overview/index/assets
+docs: https://docs.decube.io/public-api/overview/index
+notes: >-
+  Entity-relationship graph derived from the Decube Public API object reference. The Asset is the central
+  entity; its `type` enum discriminates the concrete kind. Monitors and incidents attach to assets;
+  incidents attach to monitors; ownership references users.
+entities:
+- name: Asset
+  id: id (integer)
+  discriminator: type
+  types: [source, collection, dataset, property, dashboard, chart, data_job, data_task, policy, glossary, category, term]
+  fields: [id, type, name, unified_type, raw_type, parents, linked_terms, classifications, data_owners, business_owners]
+- name: Monitor
+  fields: [id, asset, test_type, status]
+- name: Incident
+  fields: [case_id, id, time, type, test_type, level]
+- name: User
+  fields: [id, email, name]
+- name: CustomAttribute
+- name: VirtualSource
+- name: Glossary
+relationships:
+- from: Asset
+  to: Asset
+  kind: belongs_to
+  via: parents
+  cardinality: has_many
+  note: Parent hierarchy of assets.
+- from: Asset
+  to: Asset
+  kind: has_many
+  via: linked_terms
+  note: Datasets/properties link to glossary term assets.
+- from: Asset
+  to: Asset
+  kind: has_many
+  via: classifications
+  note: References policy-type assets.
+- from: Asset
+  to: User
+  kind: has_many
+  via: data_owners
+- from: Asset
+  to: User
+  kind: has_many
+  via: business_owners
+- from: Monitor
+  to: Asset
+  kind: belongs_to
+  via: asset
+- from: Incident
+  to: Monitor
+  kind: belongs_to
+  via: monitor
+- from: Incident
+  to: Asset
+  kind: belongs_to
+  via: asset

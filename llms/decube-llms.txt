@@ -1,0 +1,176 @@
+# Decube
+
+## decube Public Documentation
+
+- [Welcome to Decube](https://docs.decube.io/overview/readme.md): Reliable data, better decisions.
+- [Getting started](https://docs.decube.io/overview/getting-started.md): Get your data trust platform up and running in 30-60 minutes.
+- [How to connect data sources](https://docs.decube.io/overview/getting-started/how-to-connect-data-sources.md): Connect your data sources to start building your data trust foundation.
+- [Changelog](https://docs.decube.io/overview/changelog.md): Here's what's new, improved, and fixed in each Decube release.
+- [Support](https://docs.decube.io/overview/support.md): Here is how you can reach us for support enquiries.
+- [Frequently Asked Questions (FAQ)](https://docs.decube.io/overview/support/frequently-asked-questions-faq.md): Find quick answers to common questions about our platform, features, and support. If you can’t find what you’re looking for, feel free to reach out to our support team.
+- [Supported Browsers and System Requirements](https://docs.decube.io/overview/support/supported-browsers-and-system-requirements.md): decube is a web based application that does not require any download or install for use on a computer with a supported web browser.
+- [Overview](https://docs.decube.io/security-and-infrastructure/security.md): We built our unified data platform with industry standards to protect your data and ensure compliance while delivering observability and governance.
+- [Deployment Methods](https://docs.decube.io/security-and-infrastructure/deployment-methods.md): This document explains how Decube is architected to deliver scalability, security, and flexibility across varying customer requirements.
+- [SaaS (Multi-Tenant)](https://docs.decube.io/security-and-infrastructure/deployment-methods/saas-multi-tenant.md): In this model, both the control and data planes are hosted and managed by Decube, and shared across multiple customers.
+- [SaaS (Single-Tenant)](https://docs.decube.io/security-and-infrastructure/deployment-methods/saas-single-tenant.md): This model provides a dedicated data plane for each customer while retaining the shared control plane hosted by Decube.
+- [Bring-Your-Own-Cloud (BYOC)](https://docs.decube.io/security-and-infrastructure/deployment-methods/bring-your-own-cloud-byoc.md): In the BYOC model, Decube’s data plane is fully deployed in the customer’s own cloud for complete control and compliance with data locality requirements.
+- [Data Policy](https://docs.decube.io/security-and-infrastructure/data-policy.md): Here's how we handle your data.
+- [Snowflake](https://docs.decube.io/warehouses/snowflake.md): Adding Snowflake to your decube connections helps your team to find relevant datasets, understand their quality via incident monitoring and apply governance policies via our data catalog.
+- [Redshift](https://docs.decube.io/warehouses/redshift.md): Adding Redshift to your decube connections helps your team to find relevant datasets, understand their quality via incident monitoring and apply governance policies via our data catalog.
+- [Google Bigquery](https://docs.decube.io/warehouses/google-big-query.md): Adding Google Big Query to your decube connections helps your team to find relevant datasets, understand their quality via incident monitoring and apply governance policies via our data catalog.
+- [Databricks](https://docs.decube.io/warehouses/databricks.md): Adding Databricks to your decube connections helps your team to find relevant datasets, understand their quality via incident monitoring and apply governance policies via our data catalog.
+- [Azure Synapse](https://docs.decube.io/warehouses/azure-synapse.md): Adding Synapse to your decube connections helps your team to find relevant datasets, understand their quality via incident monitoring and apply governance policies via our data catalog.
+- [Microsoft Fabric (BETA)](https://docs.decube.io/warehouses/microsoft-fabric.md): Adding Microsoft Fabric to your decube connections helps your team find relevant datasets and apply governance policies via the data catalog
+- [Clickhouse](https://docs.decube.io/warehouses/clickhouse.md): Adding Clickhouse to your decube connections helps your team find relevant datasets and apply governance policies via the data catalog
+- [PostgreSQL](https://docs.decube.io/databases/postgresql.md): Add PostgreSQL as a decube connection and help your team discover, document and monitor their data assets to drive data-driven insights and decisions.
+- [MySQL](https://docs.decube.io/databases/mysql.md): Add MySQL as a decube connection and help your team discover, document and monitor their data assets to drive data-driven insights and decisions.
+- [SingleStore](https://docs.decube.io/databases/singlestore.md): Add SingleStore as a decube connection and help your team discover, document and monitor their data assets to drive data-driven insights and decisions.
+- [Microsoft SQL Server](https://docs.decube.io/databases/microsoft-sql-server.md): Add SQL Server as a decube connection and help your team discover, document and monitor their data assets to drive data-driven insights and decisions.
+- [Oracle](https://docs.decube.io/databases/oracle.md): Add Oracle as a decube connection and help your team discover, document and monitor data assets to drive data-driven insights and decisions.
+- [SAP HANA](https://docs.decube.io/databases/sap-hana.md): Add SAP HANA as a decube connection and help your team discover, document and monitor data assets to drive data-driven insights and decisions.
+- [dbt (Cloud Version)](https://docs.decube.io/transformation-tools/dbt.md): Adding dbt to your decube connections helps you monitor your transformations via our Data Quality model and see metadata on your dbt models and jobs directly synced to the Data Catalog.
+- [dbt Core](https://docs.decube.io/transformation-tools/dbt-core.md): Connect your decube platform to dbt Core to see all data jobs in the Catalog and see end-to-end lineage.
+- [Fivetran](https://docs.decube.io/transformation-tools/fivetran.md): Adding Fivetran to your decube connections helps your team to discover, document and monitor the quality of your data transformations.
+- [Airflow](https://docs.decube.io/transformation-tools/airflow.md): Adding Airflow to your decube connections helps your team to discover, document and monitor the quality of your pipelines.
+- [AWS Glue](https://docs.decube.io/transformation-tools/aws-glue.md): View catalogued assets within your AWS Glue, or leverage AWS Athena to add data observability capabilities and monitor Iceberg tables.
+- [Azure Data Factory](https://docs.decube.io/transformation-tools/azure-data-factory.md): Azure Data Factory is a cloud-based data integration and orchestration service by Microsoft Azure. See all your ETLs in decube and monitor the status of your jobs.
+- [Apache Spark](https://docs.decube.io/transformation-tools/apache-spark.md): See lineages from spark jobs in Decube Catalog.
+- [Apache Spark in Azure Synapse](https://docs.decube.io/transformation-tools/apache-spark/apache-spark-in-azure-synapse.md): Connecting Decube to Apache Spark specifically for Azure Synapse.
+- [OpenLineage (BETA)](https://docs.decube.io/transformation-tools/openlineage.md): This document provides a step-by-step guide to connecting with the OpenLineage connector and viewing lineage data from jobs using the OpenLineage framework.
+- [Additional configurations](https://docs.decube.io/transformation-tools/additional-configurations.md): Here's what you can do with to complete the lineage of your connections.
+- [Amazon Athena](https://docs.decube.io/query-engines/amazon-athena.md): Use Amazon Athena as Decube's compute engine for AWS Glue data sources, enabling profiling, data preview, data quality monitors, and Iceberg table observability.
+- [Salesforce](https://docs.decube.io/saas/salesforce.md): Adding Salesforce to your decube connections helps your team find relevant datasets and apply governance policies via the data catalog
+- [Tableau](https://docs.decube.io/business-intelligence/tableau.md): Add a Tableau connection to your decube so that you can discover the lineage of your assets from source to dashboards.
+- [Looker](https://docs.decube.io/business-intelligence/looker.md): Add a Looker connection to your decube so that you can discover the lineage of your assets from source to dashboards.
+- [PowerBI](https://docs.decube.io/business-intelligence/powerbi.md): Add a PowerBI connection to your decube so that you can discover the lineage of your assets from source to dashboards.
+- [AWS S3](https://docs.decube.io/datalake/s3.md): Connect your S3 to see your S3 datasets and files within the Catalog.
+- [Azure Data Lake Storage (ADLS)](https://docs.decube.io/datalake/azure-data-lake-storage-adls.md): Azure Data Lake Storage (ADLS) is a scalable and secure data lake solution from Microsoft Azure designed to handle the vast amounts of data generated by modern applications.
+- [Azure Function for Metadata](https://docs.decube.io/datalake/azure-data-lake-storage-adls/azure-function-for-metadata.md)
+- [Google Cloud Storage (GCS)](https://docs.decube.io/datalake/google-cloud-storage-gcs.md)
+- [Overview](https://docs.decube.io/virtual-sources-and-objects/virtual-sources.md): The Universal Catalog Framework let you document data sources without native Decube connectors, so they participate in your catalog, lineage, and governance workflows.
+- [Manage Virtual Sources](https://docs.decube.io/virtual-sources-and-objects/manage-virtual-sources.md): Create, edit, enable or disable, and delete virtual sources from the Integrations page.
+- [Manage Virtual Objects](https://docs.decube.io/virtual-sources-and-objects/manage-virtual-objects.md): Add, edit, and delete virtual objects under a virtual source using the Asset Tree Editor.
+- [Virtual Sources in Lineage](https://docs.decube.io/virtual-sources-and-objects/virtual-sources-in-lineage.md): Virtual assets connect to any other asset in your lineage graph, filling gaps left by sources without native connectors.
+- [Jira](https://docs.decube.io/collaboration/jira.md): Integrating Decube with Jira allows you to create issue tickets directly on the detected incidents, streamlining your workflow and ensuring efficient incident management.
+- [Enabling VPC Access](https://docs.decube.io/security-and-connectivity/enabling-vpc-access.md)
+- [IP Whitelisting](https://docs.decube.io/security-and-connectivity/ip-whitelisting.md)
+- [SSH Tunneling](https://docs.decube.io/security-and-connectivity/ssh-tunneling.md)
+- [AWS Identities](https://docs.decube.io/security-and-connectivity/aws-identities.md): Create and use AWS Identities to connect across AWS data sources like AWS Glue and S3.
+- [Incidents Overview](https://docs.decube.io/data-quality/data-quality.md): Monitor your data assets for quality issues and manage incidents across your organisation.
+- [Incident Details](https://docs.decube.io/data-quality/data-quality/incident-details.md): Explore the Incident Details page to investigate root causes, review history, and assess downstream impact.
+- [Managing Incidents](https://docs.decube.io/data-quality/data-quality/incident-management.md): Close, mute, and bulk-update incidents to manage data quality issues across your organisation.
+- [Incident model feedback](https://docs.decube.io/data-quality/data-quality/incident-model-feedback.md): How to adjust a monitor's alert sensitivity using the feedback mechanism on an incident.
+- [How Anomaly Detection Works](https://docs.decube.io/data-quality/anomaly-detection-explained.md): How Decube detects anomalies in your data — what a monitor is, how the ML model trains, and what determines whether an alert fires.
+- [Enable asset monitoring](https://docs.decube.io/data-quality/enable-asset-monitoring.md): How to create, view, and manage monitors for your data assets from the Config module.
+- [Config Settings](https://docs.decube.io/data-quality/config-settings.md): How to configure default alert channels and default monitoring behaviour for your organisation.
+- [Available Monitor Types](https://docs.decube.io/data-quality/available-monitor-types.md): The monitor types available in Decube's Data Quality module and what each one detects.
+- [Monitor Configuration Settings](https://docs.decube.io/data-quality/monitor-configuration-settings.md): Reference pages for every monitor configuration setting.
+- [Monitor Configuration Reference](https://docs.decube.io/data-quality/monitor-configuration-settings/configuration-reference.md): A reference for every setting available when creating or editing a monitor, including which settings are locked after creation.
+- [Available Monitor Modes](https://docs.decube.io/data-quality/monitor-configuration-settings/available-monitor-modes.md): Scheduled mode runs monitors automatically at a fixed frequency. On-Demand mode runs monitors manually when you choose.
+- [Custom Scheduling For Monitors](https://docs.decube.io/data-quality/monitor-configuration-settings/custom-scheduling-for-monitors.md): The scan frequency options available for Scheduled monitors and the additional settings each frequency exposes.
+- [Setting Up Your Data Quality Thresholds](https://docs.decube.io/data-quality/monitor-configuration-settings/setting-up-your-data-quality-thresholds.md): The four threshold types available in Decube monitors, which test types support each, and how thresholds relate to your DQ score.
+- [Retraining Monitors](https://docs.decube.io/data-quality/monitor-configuration-settings/retraining-monitors.md): Which monitor configuration changes trigger a retrain, what data gets deleted when a retrain runs, and how to reconfigure monitors safely.
+- [How to set up monitors](https://docs.decube.io/data-quality/how-to-set-up-monitors.md): Step-by-step setup guides for each monitor type.
+- [Catalog: Add/Modify Monitor](https://docs.decube.io/data-quality/how-to-set-up-monitors/catalog-add-modify-monitor.md): This guide walks you through the steps to add and modify monitors from the Asset Details section in the Catalog.
+- [Set Up Freshness Monitors](https://docs.decube.io/data-quality/how-to-set-up-monitors/set-up-freshness-monitors.md): Set up Freshness monitors to detect when data stops arriving on its expected schedule.
+- [Set Up Volume Monitors](https://docs.decube.io/data-quality/how-to-set-up-monitors/set-up-volume-monitors.md): Set up Volume monitors to detect when the number of new rows arriving in a table is abnormally high or low.
+- [Set Up Custom SQL Monitors](https://docs.decube.io/data-quality/how-to-set-up-monitors/custom-sql-monitors.md): Write SQL to define custom validation logic and monitor it on a schedule or on demand.
+- [Set Up Field Health Monitors](https://docs.decube.io/data-quality/how-to-set-up-monitors/set-up-field-tests.md): Follow these steps to configure monitors for specific field tests, available as On-Demand and Scheduled modes.
+- [Grouped-by Monitors](https://docs.decube.io/data-quality/how-to-set-up-monitors/set-up-grouped-by-monitors.md): This document provides conceptual information for leveraging the Grouped By option in your data quality workflows.
+- [Modify Schema Drift Monitors](https://docs.decube.io/data-quality/how-to-set-up-monitors/set-up-schema-drift-monitors.md): Here's how you set up a Schema Drift monitor.
+- [Modify Job Failure Monitors (Data Job)](https://docs.decube.io/data-quality/how-to-set-up-monitors/set-up-data-job-job-failure-monitors.md): Here's how you manage monitors for Job Failure (Data Jobs).
+- [Monitor Behaviour and Design Considerations](https://docs.decube.io/data-quality/known-limitations.md): How the Data Quality module is designed to behave in specific scenarios, and how to configure monitors to get the most out of each.
+- [Trusty AI: Overview](https://docs.decube.io/trusty-ai/trusty-ai.md): Ask Trusty questions on your metadata.
+- [Suggested Questions to ask Trusty](https://docs.decube.io/trusty-ai/trusty-ai/suggested-questions-to-ask-trusty.md): To get the most out of Trusty AI, use prompts tailored to your specific role and goals.
+- [LLM Security & Privacy](https://docs.decube.io/trusty-ai/trusty-ai/llm-security-and-privacy.md): Understand how Trusty handles LLM-based interactions, what data is passed to the model, and the security and privacy controls in place.
+- [Description Autocomplete](https://docs.decube.io/trusty-ai/copilots-autocomplete.md): The new AI-powered features in the Catalog are designed to help organizations streamline their data curation process by automatically generating consistent, high-quality descriptions and documentation
+- [MCP Overview](https://docs.decube.io/mcp/overview.md): Understand why Decube built an MCP server, the problems it solves, and how data teams use it today.
+- [Quick Start](https://docs.decube.io/mcp/quick-start.md): Get started using Decube MCP under 3 minutes.
+- [Suggested Prompts & Use Cases](https://docs.decube.io/mcp/suggested-prompts.md): Example prompts that put Decube's catalog, lineage, and quality context to work in your AI client.
+- [Overview of Asset Types](https://docs.decube.io/catalog/overview-of-asset-types.md): This page explains the main asset types in the Decube Catalog and how they relate to each other to provide a quick mental model of what lives in the catalog.
+- [Assets Catalog](https://docs.decube.io/catalog/data-catalog.md): Data dictionary for better collaboration across teams.
+- [Applying custom attributes to catalog assets](https://docs.decube.io/catalog/data-catalog/apply-custom-attributes.md): How to view and apply organization-level custom attributes to catalog assets.
+- [Syncing Metadata from Source](https://docs.decube.io/catalog/syncing-metadata-from-source.md): Bring metadata maintained in your data sources directly into the Decube Catalog — reducing duplication and keeping your catalog aligned with the source of truth.
+- [Descriptions](https://docs.decube.io/catalog/syncing-metadata-from-source/sync-from-source.md): Reduces manual export/import work and helps data governance teams maintain a single source of truth for asset descriptions by surfacing the descriptions already maintained in your data warehouse.
+- [Snowflake Tags](https://docs.decube.io/catalog/syncing-metadata-from-source/sync-snowflake-tags.md): Automatically ingest and synchronize Snowflake tags as System-Managed Attributes in the Decube Catalog, ensuring a single source of truth for governance and discovery.
+- [Column Keys & Constraints](https://docs.decube.io/catalog/syncing-metadata-from-source/sync-snowflake-column-constraints.md): Automatically ingest column keys and constraints from Snowflake datasets into the Decube Catalog, giving your team immediate visibility into data model rules and relationships.
+- [Add tags and classifications to fields](https://docs.decube.io/catalog/add-tags-and-classifications-to-fields.md): How to add tags and classifications to columns in the Catalog.
+- [Profiler](https://docs.decube.io/catalog/profiler.md): Generate and review historical profiles for your data assets
+- [Configure a profile run](https://docs.decube.io/catalog/profiler/configure-profile-run.md): Control which columns, rows, and data range are included when you generate a profile
+- [Profiler source support and limitations](https://docs.decube.io/catalog/profiler/profiler-source-support-and-limitations.md): Understand profiler support, metric availability, and source limitations
+- [Preview sample data](https://docs.decube.io/catalog/preview-sample-data.md): Gain context by seeing sample data from your table directly.
+- [Automated Lineage](https://docs.decube.io/lineage/automated-lineage.md): Visualize your data assets from source to consumption.
+- [Observability & Governance Layers](https://docs.decube.io/lineage/automated-lineage/observability-and-governance-layers.md): Toggle visual layers on the lineage graph to surface data quality incidents and governance classifications without leaving your current view.
+- [Add lineage relationships manually](https://docs.decube.io/lineage/manual-lineage.md): Close the gaps on lineage graphs through the UI or API.
+- [Lineage Relationship](https://docs.decube.io/lineage/lineage-types.md): In this document, we explore various types of data lineage and their significance in understanding data relationships.
+- [Export Lineage Graph](https://docs.decube.io/lineage/export-lineage-graph.md): Export the lineage graph as a CSV to document data flows, share lineage context, and validate downstream dependencies outside of Decube
+- [Glossary, Category and Terms](https://docs.decube.io/glossary/glossary-category-and-terms.md): Let's understand what each of them are.
+- [Adding a new Glossary](https://docs.decube.io/glossary/adding-a-new-glossary.md): A Glossary is a top-level container to all the categories and terms within your Business Glossary.
+- [Adding Terms and Linked Assets](https://docs.decube.io/glossary/adding-terms-and-linked-assets.md): This documents helps you to understand the importance of linking assets and steps how you can link assets to the terms.
+- [Moving Terms between Glossaries](https://docs.decube.io/glossary/adding-terms-and-linked-assets/moving-terms-to-glossary-category.md): Organising your terms just got easier!
+- [Applying custom attributes to Glossary](https://docs.decube.io/glossary/apply-custom-attributes.md): How to view and apply organization-level custom attributes to glossary assets.
+- [Ask Questions](https://docs.decube.io/catalog-collaboration/ask-questions.md): Start a conversation about your data asset, right inside decube.
+- [Rate an asset](https://docs.decube.io/catalog-collaboration/rate-an-asset.md): Add a rating on your Catalog assets to surface assets easily, and provide confidence to other users of the asset.
+- [Data Products: Overview](https://docs.decube.io/data-products/overview.md): Turn raw catalog assets into curated, trusted, discoverable data products.
+- [Create and Manage Data Products](https://docs.decube.io/data-products/create-and-manage-data-products.md): Browse the Data Products marketplace, create and publish a new data product, and organise the products you use most.
+- [Governance module](https://docs.decube.io/governance/governance-module.md): Within the governance module, you'll be able to manage policies which control classifications on decube.
+- [Classification Policies](https://docs.decube.io/governance/classification-policies.md): Define the policies around the classification of data assets all in one location and see all assets with the specific classification.
+- [Auto-classify data assets](https://docs.decube.io/governance/auto-classify-data-assets.md): No more manual updates: use our auto-classification via policy rules to classify data assets and protect your more sensitive data.
+- [Use Case Examples - Rules](https://docs.decube.io/governance/auto-classify-data-assets/use-case-examples-rules.md): You can quickly set up similar policy rules based on these examples.
+- [What are Change Requests?](https://docs.decube.io/approval-workflow/summary-of-approval-workflow.md): Here's how to submit change requests in decube.
+- [Initiate a change request](https://docs.decube.io/approval-workflow/summary-of-approval-workflow/initiate-a-change-request.md): Propose updates to a catalog asset by submitting a change request for reviewer approval.
+- [Review a change request](https://docs.decube.io/approval-workflow/summary-of-approval-workflow/review-a-change-request.md): Review, compare, and approve or reject change requests submitted by your team.
+- [What are Access Requests?](https://docs.decube.io/approval-workflow/what-are-access-requests.md): Here is how you request access to an asset on decube.
+- [Initiate an Access Request](https://docs.decube.io/approval-workflow/what-are-access-requests/initiate-an-access-request.md): Gain access by requesting to the asset owner.
+- [Overview of Reports](https://docs.decube.io/reports/overview-of-reports.md): Here's how to generate, view and download reports through Decube.
+- [Supported sources for Reports](https://docs.decube.io/reports/overview-of-reports/supported-sources-for-reports.md): Here are a list of report types supported by each data source.
+- [Asset Report: Data Quality Scorecard](https://docs.decube.io/reports/asset-report-data-quality-scorecard.md): This report shows the data quality scoring for supported Field Health monitors configured.
+- [Dashboard Overview](https://docs.decube.io/dashboard/dashboard-overview.md): Overview of your data quality all on one page.
+- [Incidents](https://docs.decube.io/dashboard/incidents.md)
+- [Quality](https://docs.decube.io/dashboard/health-score.md)
+- [Get alerts on email](https://docs.decube.io/alert-notifications/notification-alerts.md): Set up alert notifications to your selected email directly.
+- [Connect your Slack channels](https://docs.decube.io/alert-notifications/connect-your-slack-channels.md): Get your alerts directly in a Slack channel of your choice.
+- [Connect to Microsoft Teams](https://docs.decube.io/alert-notifications/connect-to-microsoft-teams.md): Send incident alerts to channels on Microsoft Teams.
+- [Webhooks integration](https://docs.decube.io/alert-notifications/webhooks-integration.md): Receive your decube alerts to an endpoint of your choice by using our webhooks integration.
+- [User Management - Overview](https://docs.decube.io/manage-access/user-management.md): Manage user authorizations in your organization.
+- [Invite users](https://docs.decube.io/manage-access/invite-users.md): It's no fun using decube alone.
+- [Deactivate or re-activate users](https://docs.decube.io/manage-access/deactivate-or-re-activate-users.md): Remove access for inactive users or reactivate when they're back.
+- [Revoke a user invite](https://docs.decube.io/manage-access/revoke-a-user-invite.md): Here's how to delete a user invite.
+- [Groups Management - Overview](https://docs.decube.io/group-access-policies/groups-management-overview.md): Control who can access assets in your organization by implementing Group-Based Access Control.
+- [Create Groups & Assign Policies](https://docs.decube.io/group-access-policies/create-groups-and-assign-policies.md): Manage user access by grouping them into use cases.
+- [Source-based Policies](https://docs.decube.io/group-access-policies/source-based-policies.md): Here's an explanation for each Source-base policy.
+- [Administrative-based Policies](https://docs.decube.io/group-access-policies/administrative-based-policies.md): Organizational policies that are not tied to a data source or module.
+- [Module-based Policies](https://docs.decube.io/group-access-policies/module-based-policies.md): Permissions that are not tied to a data source.
+- [What is the "Owners" group?](https://docs.decube.io/group-access-policies/owners.md): Owners have full permissions to access all features within Decube.
+- [Multi-factor authentication](https://docs.decube.io/org-settings/multi-factor-authentication.md): Set up multi-factor authentication on your decube workspace to ensure security for all your users.
+- [Single Sign-On (SSO) with Microsoft](https://docs.decube.io/org-settings/single-sign-on-sso-with-microsoft.md): Here's how you can use your organization's Microsoft account to log into decube directly.
+- [Single Sign-On (SSO) with JumpCloud](https://docs.decube.io/org-settings/sso-jumpcloud.md): In this Decube documentation for Single Sign-On (SSO) with JumpCloud, we will walk you through the process of integrating JumpCloud with Decube.
+- [Creating & managing custom attributes](https://docs.decube.io/org-settings/custom-attributes.md): How to create, edit and delete custom attributes at the organization level.
+- [Custom Attributes - Use Case Examples](https://docs.decube.io/org-settings/custom-attributes/custom-attributes-use-case-examples.md): Use cases for you to add custom attributes to your metadata in the Catalog.
+- [Deprecation Guide: Tags → Column Tags](https://docs.decube.io/org-settings/custom-attributes/deprecation-guide-tags-to-column-tags.md): Tags were deprecated on 15 June 2026 and automatically migrated to a new custom attribute called Column Tags.
+- [Export/Import Overview](https://docs.decube.io/export-import/export-import-overview.md): Learn more about the Export/Import functionality to quickly update metadata across the platform.
+- [Export for Editing existing objects](https://docs.decube.io/export-import/export-for-editing-existing-objects.md): Understand how to export your Catalog, Glossary and Policy objects from the platform.
+- [Export for Creating new objects](https://docs.decube.io/export-import/export-for-creating-new-objects.md)
+- [CSV Template Structure (Edit existing items)](https://docs.decube.io/export-import/csv-template-structure-edit-existing-items.md): This document provides a comprehensive guide on how to structure your CSV files to update existing objects in Decube using the Export/Import feature.
+- [CSV Template Structure (Add new items)](https://docs.decube.io/export-import/csv-template-structure-add-new-items.md)
+- [Importing Data (Edit existing items & Add new items)](https://docs.decube.io/export-import/importing-data-to-decube.md): Learn more about the Import functionality to quickly update metadata across the platform.
+- [History](https://docs.decube.io/export-import/history.md)
+- [Overview](https://docs.decube.io/public-api/overview.md)
+- [Data API](https://docs.decube.io/public-api/overview/index.md)
+- [Assets](https://docs.decube.io/public-api/overview/index/assets.md)
+- [Glossary](https://docs.decube.io/public-api/overview/index/glossary.md)
+- [Lineage](https://docs.decube.io/public-api/overview/index/lineage.md)
+- [Monitors](https://docs.decube.io/public-api/overview/index/monitors.md): Integrate monitoring and alerting into orchestration, CI/CD, and observability workflows so teams can react faster and automate responses to data issues.
+- [Create, Manage & Delete](https://docs.decube.io/public-api/overview/index/monitors/create-manage-and-delete.md): Programmatically manage data quality monitors for your assets so you can monitor various aspects of data quality including freshness, volume, field health and custom rules.
+- [Examples of Monitor Creation](https://docs.decube.io/public-api/overview/index/monitors/examples.md): Practical examples for creating data quality monitors using the Decube Public API. These examples demonstrate proper payload structure and follow all validation rules.
+- [ACL](https://docs.decube.io/public-api/overview/index/acl.md)
+- [Group](https://docs.decube.io/public-api/overview/index/acl/group.md)
+- [Reports](https://docs.decube.io/public-api/overview/index/reports.md)
+- [Data Quality Scorecard](https://docs.decube.io/public-api/overview/index/reports/data-quality-scorecard.md)
+- [Recon](https://docs.decube.io/public-api/overview/index/recon.md)
+- [Custom Attributes](https://docs.decube.io/public-api/overview/index/custom-attributes.md): Create and manage Custom Attributes for your organization.
+- [Virtual Sources](https://docs.decube.io/public-api/overview/index/virtual-sources.md): Create, update, and delete virtual sources and virtual objects programmatically via the Decube API.
+- [Control API](https://docs.decube.io/public-api/overview/control-api.md)
+- [Users](https://docs.decube.io/public-api/overview/control-api/users.md)
+- [Use Cases](https://docs.decube.io/public-api/use-cases.md): This guide provides practical examples of how to leverage the Decube Public API to automate common data management workflows and integrate with your existing systems.
+- [API Keys](https://docs.decube.io/public-api/api-keys.md)

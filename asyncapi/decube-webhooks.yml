@@ -1,0 +1,37 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.decube.io/alert-notifications/webhooks-integration
+spec_type: Webhooks
+notes: >-
+  Decube delivers incident/alert notifications to a customer-supplied HTTPS endpoint via its webhooks
+  integration. The subscriber configures the destination URL and a custom HTTP header + token used to
+  authenticate deliveries; the endpoint is validated with a test button before activation. Payloads are
+  JSON. No AsyncAPI document is published by the provider.
+delivery:
+  transport: https-post
+  content_type: application/json
+  auth: custom HTTP header + token (subscriber-defined)
+  validation: test button verifies the endpoint before enabling
+events:
+- name: incident.raised
+  description: Fired when Decube raises an incident alert for a monitored asset (e.g. a field_health / null_percentage breach).
+payload:
+  top_level_fields:
+  - organization_id
+  - asset          # catalog asset and parent hierarchy
+  - incident       # alert details
+  - monitor        # monitor metadata
+  - detail         # scan metrics
+  incident_object:
+  - case_id
+  - id
+  - time
+  - type
+  - test_type
+  - level
+  detail_object:
+  - value
+  - upper_bound
+  - lower_bound
+  - test_type
+  - metric_name
