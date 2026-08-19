@@ -7,17 +7,13 @@ server:
   name: decube-mcp
   transport: http
   auth: oauth2
-  # Region-specific hosted endpoints; OAuth via the connected client (Claude Connectors,
-  # Cursor, ChatGPT, Microsoft Copilot Studio).
   urls:
     us: https://connect.us1.decube.io/mcp
     eu: https://connect.eu1.decube.io/mcp
     apac: https://connect.apac.decube.io/mcp
-notes: >-
-  Decube publishes a fully hosted, OAuth-authenticated MCP server (GA since 2026-07-06,
-  write/action tools added 2026-07-09). Both read and write/action tools are exposed so
-  connected AI clients can search the catalog, inspect lineage/quality, manage monitors,
-  and act on incidents.
+notes: Decube publishes a fully hosted, OAuth-authenticated MCP server (GA since 2026-07-06, write/action
+  tools added 2026-07-09). Both read and write/action tools are exposed so connected AI clients can search
+  the catalog, inspect lineage/quality, manage monitors, and act on incidents.
 tools:
 - name: search_assets
   group: catalog
@@ -83,3 +79,10 @@ tools:
   group: docs
 - name: get_docs_page
   group: docs
+deployment:
+  mode: remote
+  endpoint: https://connect.us1.decube.io/mcp
+  verified: probed
+  probe: gated
+  checked: '2026-08-12'
+  source: catalog MCP census
