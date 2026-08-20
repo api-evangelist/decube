@@ -41,6 +41,17 @@ tags:
 - Metadata Management
 - Data Trust
 - Data Products
+- MCP
+tags_raw:
+- Company
+- Data Observability
+- Data Governance
+- Data Catalog
+- Data Quality
+- Data Lineage
+- Metadata Management
+- Data Trust
+- Data Products
 - Model Context Protocol
 apis:
 - name: Decube Public API
