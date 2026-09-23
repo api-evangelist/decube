@@ -1,8 +1,7 @@
 generated: '2026-07-18'
 method: searched
 source: live probes of /.well-known/ across Decube hosts
-notes: >-
-  No /.well-known/ discovery documents are published. All probed paths returned 404 across the marketing,
+notes: No /.well-known/ discovery documents are published. All probed paths returned 404 across the marketing,
   docs, app, and API-connect hosts. Recorded for the audit trail; empty is a valid result.
 hosts_probed:
 - https://decube.io
@@ -10,14 +9,21 @@ hosts_probed:
 - https://us1.decube.io
 - https://connect.us1.decube.io
 - https://docs.decube.io
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
+hosts:
+- host: ''
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.

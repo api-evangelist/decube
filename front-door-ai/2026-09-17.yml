@@ -1,0 +1,31 @@
+# Front Door AI Index — decube — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: decube
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: decube.io
+  final_host: www.decube.io
+  ownership: own
+  owner: decube
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 39
+  host_score: 39
+  density: 18.53
+  words: 2105
+  tiers:
+    agentic: 9
+    core: 30
+    model: 0
+  ambiguous: 8
+  top_terms:
+    AI: 26
+    AI agent: 7
+    agent: 7
+    ML: 3
+    MCP: 2
+    LLMs: 1
+    automation: 1
